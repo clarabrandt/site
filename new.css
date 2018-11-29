@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+  
+}
+  .main {
+    background: #FC427B;
+    width: 100%;
+    height: 100%;
+    padding: 45px 30px 30px 45px;
+  }
+    .grid {
+      width: 100%;
+      height: 100%;
+      background-color: #25CCF7;
+      display: grid;
+      grid-template-columns: 288px 2fr repeat(2, 1fr);
+      grid-template-rows: repeat(9, 30px) auto;
+      grid-template-areas: 
+      "picture title title title"
+      "picture title title title"
+      "picture subtitle subtitle subtitle"
+      "picture . . ."
+      "picture . . ."
+      "picture obj obj obj"
+      "picture obj obj obj"
+      "picture obj obj obj"
+      "picture studies courses skills"
+      "about studies courses skills"
+      "languages studies courses skills"
+      "languages studies courses skills"
+      "interests studies courses skills"
+      "interests studies courses skills"
+      "interests work work work"
+      "interests work work work"
+      "interests work work work"
+      "interests work work work"
+    }
+    .title {
+      grid-area: title;
+      background-color: #B33771;
+    }
+    .subtitle {
+      grid-area: subtitle;
+      background-color: #3B3B98;
+    }
+    .picture {
+      grid-area: picture;
+      background-color: #FD7272;
+    }
+      .profilePic {
+        height: 270px;
+        max-width: 288px;
+      }
+    .about {
+      grid-area: about;
+      background-color: #fff;
+      border-top: 20px solid  rgb(22, 7, 163);
+      padding: 10px 25px;
+    }
+      .about-title {
+        font-weight: 700;
+      }
+      .line-about{
+        width: 47px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin-bottom: 1em;
+      }
+      p {
+        align-self: center;
+        margin: 0;
+        line-height: 1.7;
+      
+      }
+      .info-local{
+        display: grid;
+        grid-template-columns: 40px auto;
+        max-width: 240px;
+      }
+      .info-email {
+        display: grid;
+        grid-template-columns: 40px auto;
+        max-width: 240px;
+      } 
+      .lnr {
+        height: 25px;
+        width: 25px;
+      }
+
+    .obj {
+      grid-area: obj;
+      background-color: #FC427B;
+    }
+    .studies {
+      grid-area: studies;
+      background-color: #D6A2E8;
+    }
+    .skills {
+      grid-area: skills;
+      background-color: #2C3A47;
+    }
+    .courses {
+      grid-area: courses;
+      background-color: #F8EFBA;
+    }
+    .work {
+      grid-area: work;
+      background-color:#CAD3C8;
+    }
+    .languages {
+      grid-area: languages;
+      background-color: #fff;
+      padding: 0 25px;
+    }
+      .languages-title {
+        font-weight: 700;
+      }
+      .line-languages {
+        width: 81px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin-bottom: 1em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+      }
+        li {
+          text-align: left; 
+          padding: 4px 0 4px 0;
+          margin-bottom: 3px;
+        }
+    .interests {
+      grid-area: interests;
+      background-color: #fff;
+      padding: 0 25px;
+    }
+      .interests-title {
+        font-weight: 700;
+      }
+      .line-interests {
+        width: 73px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin-bottom: 1em;
+      }
+      .interestsIcons {
+        margin-top: 20px;
+      }
+        .row-icons {
+          display: grid;
+          grid-template-columns: 40px 40px 40px 40px 40px 40px;
+        }
+
