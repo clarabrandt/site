@@ -176,18 +176,18 @@ body, html {
 							min-height: 0;
 							margin: 0 0 16px 0;
 						}
-        .estudies{
+        .studies{
 					display: grid;
 					grid-template-columns: 3fr 2fr 2fr;
 				}
-					.line-estudies {
+					.line-studies {
 						width: 73px;
 						border-bottom: 2px solid rgb(22, 7, 163);
 						position: relative;
 						min-height: 0;
 						margin: 0 0 16px 0;
 					}
-					.estudies_content{
+					.studies_content{
 						display: grid;
 						grid-template-columns: 100px 400px;
 					}

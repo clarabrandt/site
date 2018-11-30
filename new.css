@@ -11,49 +11,69 @@ body, html {
   
 }
   .main {
-    background: #FC427B;
     width: 100%;
     height: 100%;
     padding: 45px 30px 30px 45px;
+    overflow-y: scroll;
   }
     .grid {
       width: 100%;
       height: 100%;
-      background-color: #25CCF7;
       display: grid;
-      grid-template-columns: 288px 2fr repeat(2, 1fr);
-      grid-template-rows: repeat(9, 30px) auto;
+      grid-template-columns: 288px 60px 2fr repeat(2, 1fr);
+      grid-template-rows: repeat(16, 30px) auto;
       grid-template-areas: 
-      "picture title title title"
-      "picture title title title"
-      "picture subtitle subtitle subtitle"
-      "picture . . ."
-      "picture . . ."
-      "picture obj obj obj"
-      "picture obj obj obj"
-      "picture obj obj obj"
-      "picture studies courses skills"
-      "about studies courses skills"
-      "languages studies courses skills"
-      "languages studies courses skills"
-      "interests studies courses skills"
-      "interests studies courses skills"
-      "interests work work work"
-      "interests work work work"
-      "interests work work work"
-      "interests work work work"
+      "picture . title title title"
+      "picture . title title title"
+      "picture . subtitle subtitle subtitle"
+      "picture . . . ."
+      "picture . obj obj obj"
+      "picture . obj obj obj"
+      "picture . obj obj obj"
+      "picture . studies courses skills"
+      "picture . studies courses skills"
+      "about . studies courses skills"
+      "about . studies courses skills"
+      "about . studies courses skills"
+      "about . studies courses skills"
+      "about . studies courses skills"
+      "languages . studies courses skills"
+      "languages . studies courses skills"
+      "languages . work work work"
+      "interests . work work work"
+      ". . work work work"
     }
     .title {
       grid-area: title;
-      background-color: #B33771;
     }
+      h1 {
+        margin: 0;
+        font-family: 'Parisienne';
+        font-size: 56px;
+      }
+    /* #github {
+      grid-area: github;
+    }
+    #linkedin {
+      grid-area: linkedin;
+    } */
     .subtitle {
       grid-area: subtitle;
-      background-color: #3B3B98;
+      padding: 10px 0 0 0;
+    }
+    .position{
+      font-family: 'sans serif';
+      font-size: 20px;
+      font-weight: normal;
+    }
+    .line-subtitle {
+      background-color: rgb(22, 7, 163);
+      position: relative;
+      min-height: 0;
+      margin: 8px 0 26px 8px;
     }
     .picture {
       grid-area: picture;
-      background-color: #FD7272;
     }
       .profilePic {
         height: 270px;
@@ -61,7 +81,6 @@ body, html {
       }
     .about {
       grid-area: about;
-      background-color: #fff;
       border-top: 20px solid  rgb(22, 7, 163);
       padding: 10px 25px;
     }
@@ -79,7 +98,6 @@ body, html {
         align-self: center;
         margin: 0;
         line-height: 1.7;
-      
       }
       .info-local{
         display: grid;
@@ -95,37 +113,119 @@ body, html {
         height: 25px;
         width: 25px;
       }
-
-    .obj {
+    .objectives {
       grid-area: obj;
-      background-color: #FC427B;
     }
+      .line-objectives {
+        width: 160px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin: 0 0 16px 0;
+      }
+      .topic-title{
+        font-weight: 700;
+        font-size: 18px;
+      }
     .studies {
       grid-area: studies;
-      background-color: #D6A2E8;
     }
+      .line-studies {
+        width: 73px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin: 0 0 16px 0;
+      }
+      .studies_content{
+        display: grid;
+        grid-template-columns: 100px 400px;
+      }
+        .date {
+          display: grid;
+          grid-template-rows: repeat(3, 54px);
+          font-weight: 700;
+          line-height: 1.7;
+        }
     .skills {
       grid-area: skills;
-      background-color: #2C3A47;
     }
+      .line-skills {
+        width: 52px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin: 0 0 16px 0;
+      }
+      .specifics {
+        font-weight: normal;
+      }
     .courses {
       grid-area: courses;
-      background-color: #F8EFBA;
     }
+      .line-courses {
+        width: 70px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin: 0 0 16px 0;
+      }
+      .topic {
+        font-size: 16px;
+        font-weight: 700;
+				line-height: 1.7;
+      }
+      .school {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
     .work {
       grid-area: work;
-      background-color:#CAD3C8;
+      display: grid;
+      grid-template-rows: 40px 10px 300px;
     }
+        .line-work {
+          width: 141px;
+          border-bottom: 2px solid rgb(22, 7, 163);
+          position: relative;
+          min-height: 0;
+          margin: 0 0 16px 0;
+        }
+        .work_content {
+            display: grid;
+            grid-template-columns: repeat(2, 500px);
+        }
+          .date_1 {
+            display: grid;
+            grid-template-rows: repeat(3, 60px);
+            font-weight: 700;
+      }
+          .job-title {
+            font-weight: 700;
+            font-size: 16px;
+          }
+          .date_2 {
+            display: grid;
+            grid-template-rows: repeat(3, 44px);
+            font-weight: 700;
+          }
+          .work_experience {
+            display: grid;
+            grid-template-columns: 100px 320px;  
+          }
+          .description {
+            font-size: 14px;
+            margin: 5px 0 10px 0;
+          }
     .languages {
       grid-area: languages;
-      background-color: #fff;
       padding: 0 25px;
     }
       .languages-title {
         font-weight: 700;
       }
       .line-languages {
-        width: 81px;
+        width: 84px;
         border-bottom: 2px solid rgb(22, 7, 163);
         position: relative;
         min-height: 0;
@@ -143,14 +243,13 @@ body, html {
         }
     .interests {
       grid-area: interests;
-      background-color: #fff;
       padding: 0 25px;
     }
       .interests-title {
         font-weight: 700;
       }
       .line-interests {
-        width: 73px;
+        width: 75px;
         border-bottom: 2px solid rgb(22, 7, 163);
         position: relative;
         min-height: 0;
@@ -164,3 +263,45 @@ body, html {
           grid-template-columns: 40px 40px 40px 40px 40px 40px;
         }
 
+        @media only screen and (max-width: 600px) {
+          .main {
+            padding: 0;
+          }
+            .grid {
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto;
+              grid-template-areas: 
+              "picture picture"
+              "picture picture"
+              "title title"
+              "subtitle subtitle"
+              "about about"
+              "obj obj"
+              "obj obj"
+              "studies studies"
+              "studies studies"
+              "courses courses"
+              "work work"
+              "work work"
+              "work work"
+              "skills skills"
+              "skills skills"
+              "languages languages"
+              "interests interests"
+            }
+           
+            .profilePic {
+              max-width: 100%;
+              height: 100%;
+              /* max-height: 140px; */
+              background-size: cover;
+              -webkit-transform: scale(1.5);
+              transform: scale(1.5); 
+             -webkit-transform-origin: center;
+              transform-origin: center;
+              /* align-items: center; */ 
+            }
+            h1 {
+              font-size: 40px;
+            }
+        }
