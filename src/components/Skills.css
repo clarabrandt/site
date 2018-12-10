@@ -1,0 +1,43 @@
+.skills {
+  grid-area: skills;
+}
+  .skills--title {
+    font-size: 14px;
+    margin-top: 18px;
+    font-weight: 700;
+  }
+  .skills--line {
+    width: 40px;
+    border-bottom: 2px solid rgb(22, 7, 163);
+    position: relative;
+    min-height: 0;
+    margin: 0 0 16px 0;
+  }
+  .skills--specifics {
+    font-weight: normal;
+  }
+  .skills-topic {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .skills{
+      padding: 10px 0 0 0;
+      overflow-x: hidden;
+    }
+    .skills--title {
+      font-size: 14px;
+      margin-top: 18px;
+    }
+    .skills--line {
+      margin: 0 0 8px 0;
+    }
+
+    .skills--myskills {
+      margin-bottom: 10px;
+    }
+  }
+
+  

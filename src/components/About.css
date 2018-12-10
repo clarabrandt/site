@@ -1,0 +1,46 @@
+.about {
+  grid-area: about;
+  border-top: 20px solid  rgb(22, 7, 163);
+  padding: 10px 25px;
+}
+  .about--title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .about--line{
+    width: 40px;
+    border-bottom: 2px solid rgb(22, 7, 163);
+    position: relative;
+    min-height: 0;
+    margin-bottom: 1em;
+  }
+  .about--info-local{
+    display: grid;
+    grid-template-columns: 40px auto;
+    max-width: 240px;
+    font-size: 14px;
+  }
+  .about--info-email {
+    display: grid;
+    grid-template-columns: 40px auto;
+    max-width: 240px;
+    font-size: 14px;
+  } 
+  .about--lnr {
+    height: 25px;
+    width: 25px;
+  }
+  p {
+    align-self: center;
+    margin: 0;
+    line-height: 1.7;
+  }
+  @media only screen and (max-width: 420px) {
+    .about {
+      padding-left: 5px;
+    }
+    .about--title,
+    .about--line {
+      display: none;
+    }
+  }

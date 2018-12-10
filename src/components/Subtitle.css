@@ -1,0 +1,26 @@
+.subtitle {
+  grid-area: subtitle;
+  padding: 10px 0 0 0;
+  position: sticky;
+}
+  .position{
+    font-family: 'sans-serif';
+    font-size: 18px;
+    font-weight: normal;
+    
+  }
+  .subtitle--line {
+    background-color: rgb(22, 7, 163);
+    position: relative;
+    min-height: 0;
+    margin: 8px 0 26px 8px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .subtitle {
+      padding: 0 0 10px 0;
+    }
+    .subtitle--line {
+      display: none;
+    }
+  }

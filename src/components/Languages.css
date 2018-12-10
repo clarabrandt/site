@@ -1,0 +1,39 @@
+    .languages {
+      grid-area: languages;
+      padding: 0 25px;
+    }
+      .languages--title {
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .languages--line {
+        width: 71px;
+        border-bottom: 2px solid rgb(22, 7, 163);
+        position: relative;
+        min-height: 0;
+        margin-bottom: 1em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+      }
+        li {
+          text-align: left; 
+          padding: 4px 0 4px 0;
+          margin-bottom: 3px;
+          font-size: 14px;
+        }
+
+    @media only screen and (max-width: 420px) {
+      .languages{
+        padding-left: 0;
+        margin-top: 10px;
+      }
+      .languages--line {
+        margin: 0 0 8px 0;
+      }
+      ul {
+        margin: 0
+      }
+    }

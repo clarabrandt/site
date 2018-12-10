@@ -1,0 +1,38 @@
+.interests {
+  grid-area: interests;
+  padding: 0 25px;
+}
+  .interests--title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .interests--line {
+    width: 64px;
+    border-bottom: 2px solid rgb(22, 7, 163);
+    position: relative;
+    min-height: 0;
+    margin-bottom: 1em;
+  }
+  .interests--icons {
+    margin-top: 20px;
+  }
+    .interests--row-icons {
+      display: grid;
+      grid-template-columns: 40px 40px 40px 40px 40px 40px;
+    }
+    .interests--lnr {
+      height: 25px;
+      width: 25px;
+    }
+    @media only screen and (max-width: 420px) {
+      .interests{
+        padding-left: 0;
+        margin-top: 15px;
+      }
+      .interests--line {
+        margin: 0 0 8px 0;
+      }
+      .interests--icons {
+        margin: 10px 0 20px 0;
+      }
+    }

@@ -1,0 +1,39 @@
+.courses {
+  grid-area: courses;
+}
+  .courses--title {
+    font-size: 14px;
+    margin-top: 18px;
+    font-weight: 700;
+  }
+  .courses--line {
+    width: 54px;
+    border-bottom: 2px solid rgb(22, 7, 163);
+    position: relative;
+    min-height: 0;
+    margin: 0 0 16px 0;
+  }
+  .courses--topic {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+  .courses--school {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .courses {
+      padding: 10px 0 0 0;;
+      overflow-x: hidden;
+    }
+    .courses--title {
+      font-size: 14px;
+      margin-top: 18px;
+    }
+    .courses--line {
+      width: 54px;
+      margin: 0 0 10px 0;
+    }
+  }
