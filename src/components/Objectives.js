@@ -8,7 +8,7 @@ class Objectives extends Component {
         <div className="objectives--title">CAREER OBJECTIVES</div>
         <div className="objectives--line"></div>
         <div className="objectives--goal">
-          <p>To be able to give my best and develop further the skills that I have learned to become the best developer that I can be.</p>
+          <p>To be able to work as a developer and give my best, learning and improving further the skills that I have acquired to become the best professional that I can be.</p>
         </div>
       </div>
     )

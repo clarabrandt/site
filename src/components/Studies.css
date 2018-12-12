@@ -15,15 +15,19 @@
   }
   .studies--content{
     display: grid;
-    grid-template-columns: 100px 250px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto)
   }
-    .studies--date {
+  .studies--item {
+    grid-column: 1/1;
+  }
+    /* .studies--date {
       display: grid;
       grid-template-rows: repeat(4, auto);
       font-weight: 700;
       line-height: 1.7;
       font-size: 14px;
-    }
+    } */
       .studies--topic {
         font-size: 14px;
         font-weight: 700;

@@ -19,37 +19,37 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     margin-top: 10px;
+    text-align: justify;
   }
-    .work--date-1{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 60px);
+    .work--date{
       font-weight: 700;
       font-size: 14px;
-      
     } 
     .job--title {
       font-weight: 700;
       font-size: 14px;
     }
-    .work--date-2 {
-      display: grid;
-      grid-template-rows: repeat(2, 52px);
-      font-weight: 700;
-      font-size: 14px;
-    }
-    .work--experience-1 {
-      display: grid;
-      grid-template-columns: 100px auto;
-      margin-right: 60px;  
-    }
     .job--description {
       font-size: 14px;
       margin: 5px 0 15px 0;
     }
+    
+    .work--experience-1,
     .work--experience-2 {
       display: grid;
-      grid-template-columns: 100px auto; 
+      grid-template-columns: 1fr;
+      margin: 0;
+    }
+    .work--experience-1 {
+      margin-right: 30px;
+    }
+    .work--experience-item {
+      display: grid;
+      grid-template-columns: 80px auto;
+      margin: 0;
+    }
+    .job--description {
+      grid-column: 2/2;
     }
 
     @media only screen and (max-width: 420px) {
@@ -62,23 +62,22 @@
         grid-template-columns: 1fr;
         text-align: justify; 
       }
-      .work--date-1 {
-        font-size: 13px;
-      }
-      .work--date-2 {
+      .work--date {
         font-size: 13px;
       }
        
       .work--experience-1,
       .work--experience-2 {
         display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+      }
+      .work--experience-item {
+        display: grid;
         grid-template-columns: 80px auto;
+        margin: 0;
       }
-      .date_1 {
-        font-size: 12px;
-        margin-top: 2px;
-      }
-      .date_2 {
-        font-size: 12px;
+      .job--description {
+        grid-column: 2/2;
       }
     }
