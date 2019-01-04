@@ -2,6 +2,8 @@
   grid-area: subtitle;
   padding: 10px 0 0 0;
   position: sticky;
+  top: -10px;
+  z-index: 9997;
 }
   .position{
     font-family: 'sans-serif';
