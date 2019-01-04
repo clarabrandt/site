@@ -1,6 +1,7 @@
 .title {
   grid-area: title;
   position: sticky;
+  position: -webkit-sticky;
   top: -1px;
   background-color: #fff;
   z-index: 9999;

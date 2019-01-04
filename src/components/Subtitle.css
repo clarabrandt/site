@@ -1,14 +1,20 @@
 .subtitle {
+  display: flex;
   grid-area: subtitle;
-  padding: 10px 0 0 0;
-  position: sticky;
+  padding: 8px 0 0 0;
+  align-items: flex-start
+  /* position: sticky;
   top: -10px;
-  z-index: 9997;
+  z-index: 9997; */
 }
   .position{
     font-family: 'sans-serif';
     font-size: 18px;
     font-weight: normal;
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 9999;
     
   }
   .subtitle--line {

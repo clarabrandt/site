@@ -1,6 +1,6 @@
 .interests {
   grid-area: interests;
-  padding: 0 25px;
+  padding: 0 10px;
 }
   .interests--title {
     font-weight: 700;

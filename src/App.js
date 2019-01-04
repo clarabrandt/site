@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import Courses from './components/Courses.js'
 import Work from './components/Work.js'
@@ -11,6 +14,7 @@ import Picture from './components/Picture.js'
 import About from './components/About.js'
 import Languages from './components/Languages.js'
 import Interests from './components/Interests.js'
+
 
 // import MainContainer from './components/MainContainer';
 

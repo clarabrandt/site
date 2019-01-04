@@ -1,7 +1,7 @@
 .about {
   grid-area: about;
   border-top: 20px solid  rgb(22, 7, 163);
-  padding: 10px 25px;
+  padding: 10px 10px;
 }
   .about--title {
     font-weight: 700;
@@ -29,6 +29,9 @@
   .about--lnr {
     height: 25px;
     width: 25px;
+  }
+  .about--lnr-github {
+    margin: 5px 5px 5px 0;
   }
   p {
     align-self: center;
